@@ -1,0 +1,116 @@
+/* تنسيق الجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #5e72e4, #2dce89); /* تدرج لوني عصري */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease;
+}
+
+/* تأثير التحريك على الحاوية */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق العنوان */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق النصوص */
+label {
+    font-size: 20px;
+    margin-bottom: 12px;
+    display: block;
+    color: #444;
+}
+
+/* تنسيق مدخلات النص */
+input[type="number"] {
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تغيير لون الحدود عند التركيز */
+input[type="number"]:focus {
+    border-color: #2dce89;
+    box-shadow: 0 0 10px rgba(45, 206, 137, 0.4);
+}
+
+/* تنسيق الزر */
+button {
+    background-color: #2dce89;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* تغيير لون الزر عند التمرير عليه */
+button:hover {
+    background-color: #1d8b58;
+    transform: translateY(-5px);
+}
+
+/* تنسيق النتيجة */
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* تنسيق النجاح */
+.success {
+    color: #4CAF50;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* تنسيق الفشل */
+.failure {
+    color: #f44336;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* تأثير إظهار النتيجة */
+.result.visible {
+    opacity: 1;
+}
